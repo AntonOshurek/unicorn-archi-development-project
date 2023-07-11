@@ -1,24 +1,59 @@
 {
-  "name": "unicorn-archi-development-project",
-  "version": "1.0.0",
-  "description": "project for unicorn archi firm fro development project",
-  "main": "index.js",
+	"name": "unicorn-archi-development-project",
+	"version": "1.0.0",
+	"description": "project for unicorn archi firm fro development project",
+	"main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp validateMarkup --silent && gulp lintBemMarkup && stylelint \"./src/styles/**/*.less\" --custom-syntax postcss-less",
+    "build": "gulp runBuild",
+    "start": "gulp runDev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AntonOshurek/unicorn-archi-development-project.git"
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [
-    "unicorn",
-    "unicorn",
-    "archi"
-  ],
-  "author": "Anton Oshurek",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AntonOshurek/unicorn-archi-development-project/issues"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AntonOshurek/unicorn-archi-development-project.git"
+	},
+	"keywords": [
+		"unicorn",
+		"unicorn",
+		"archi"
+	],
+	"author": "Anton Oshurek",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AntonOshurek/unicorn-archi-development-project/issues"
+	},
+	"homepage": "https://github.com/AntonOshurek/unicorn-archi-development-project#readme",
+	  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.0",
+    "browser-sync": "^2.27.11",
+    "core-js": "^3.27.0",
+    "csso": "^5.0.5",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-html-bemlinter": "^2.1.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-less": "^5.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sitemap": "^8.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-w3c-html-validator": "^5.1.4",
+    "postcss-csso": "^6.0.1",
+    "postcss-less": "^6.0.0",
+    "stylelint": "^14.16.0",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   },
-  "homepage": "https://github.com/AntonOshurek/unicorn-archi-development-project#readme"
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.20"
+  }
 }
