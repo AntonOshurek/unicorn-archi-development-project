@@ -1,0 +1,54 @@
+@import '../variables/variables.less';
+
+.about-us {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, min-content);
+	gap: 30px;
+
+	padding: var(--standart-side-padding);
+
+	@media (max-width: @tablet-width) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 20px;
+	}
+}
+
+.about-us__title {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	text-align: left;
+}
+
+.about-us__link {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	width: min-content;
+	height: min-content;
+}
+
+.about-us__logo {
+	width: 200px;
+	height: 50px;
+	object-fit: cover;
+}
+
+.about-us__info {
+	grid-row: 3/-1;
+
+	font-family: var(--basci-font);
+	font-size: var(--subtext-font-size);
+	font-weight: var(--subtext-font-weight);
+	color: var(--main-text-color);
+
+	&:first-child {
+		grid-column: 1/2;
+	}
+
+	&:last-child {
+		grid-column: 2/-1;
+	}
+}

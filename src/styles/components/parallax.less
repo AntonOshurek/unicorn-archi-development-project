@@ -1,0 +1,23 @@
+@import '../variables/variables.less';
+
+.parallax {
+	min-height: 500px;
+
+	object-fit: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&--one {
+		background-image: url('../images/banner.jpg');
+	}
+
+	&--two {
+		background-image: url('../images/parallax-2.jpg');
+	}
+
+	@media (max-width: @mobile-width) {
+		min-height: 300px;
+	}
+}

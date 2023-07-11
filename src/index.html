@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Landing</title>
+
+	<link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+	<!-- <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> -->
+	<!-- <link rel="apple-touch-icon" href="images/favicons/apple.png"> 180×180 -->
+	<!-- <link rel="manifest" href="manifest.webmanifest"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="styles/style.min.css">
+</head>
+<body class="body">
+
+	<section class="banner">
+		<div class="banner__wrap container">
+			<h1 class="banner__title section-title">
+				<span>Nazwa projektu</span>
+				<span>Poznań</span>
+			</h1>
+			<p class="banner__text">
+				Otwórz drzwi do Twojego marzenia
+				<br/>
+				Unikalne domy w Poznaniu
+			</p>
+		</div>
+	</section>
+
+	<section class="about container">
+		<h2 class="visually-hidden">o projekcie</h2>
+		<p class="about__title section-double-title">
+			<span>
+				Twoja historia zaczyna się tutaj
+			</span>
+			<span>
+				Idealny dom w samym sercu Poznania
+			</span>
+		</p>
+		<p class="about__info general-text">
+			Nasz projekt domu to luksusowe rozwiązanie dla nowoczesnej rodziny, poszukującej komfortu, funkcjonalności i stylu w
+			jednym miejscu. Nasze innowacyjne plany mieszkań oferują przestronne i eleganckie wnętrza, doskonale dopasowane do
+			codziennego życia i rozrywki. Zlokalizowany w samym sercu [miejscowość], nasz dom pozwoli Ci cieszyć się wszystkimi
+			atutami tego urokliwego regionu. Odkryj swoją historię w naszym idealnym domu i stwórz niezapomniane chwile dla całej
+			rodziny.
+		</p>
+		<img
+			class="about__image"
+			src="./images/about.jpg"
+			alt=""
+			width="400"
+			height="400">
+	</section>
+
+	<div class="parallax parallax--one" aria-hidden="true"></div>
+
+	<section class="layout container">
+		<h2 class="layout__title section-title">
+			Znajdź swoją <br/>przestrzeń
+		</h2>
+
+		<div class="layout__data">
+			<div class="layout__data-item">
+				<h3 class="layout__data-title"><span>2</span> DOMY</h3>
+				<!-- <p class="layout__data-info">2</p> -->
+			</div>
+			<div class="layout__data-item">
+				<h3 class="layout__data-title">POWIERZCHNIA <span>180 m</span></h3>
+				<!-- <p class="layout__data-info">180 m</p> -->
+			</div>
+			<div class="layout__data-item">
+				<h3 class="layout__data-title">DZIAŁKI <span>364 m</span></h3>
+				<!-- <p class="layout__data-info">364 m</p> -->
+			</div>
+		</div>
+
+		<p class="layout__info general-text">
+			Odkryj przestronne i funkcjonalne wnętrza naszego domu, które zapewnią Ci nieograniczoną przestrzeń do spełniania marzeń
+			i realizacji pasji. Ciesz się doskonale zaprojektowanymi przestrzeniami, które harmonijnie łączą elegancję z wygodą.
+			Przez starannie dobrane detale i wysokiej jakości materiały, stworzyliśmy wnętrze, które emanuje stylem i klasyką.
+			Niezależnie od tego, czy potrzebujesz miejsca na relaks, pracę czy spotkania z bliskimi, nasz dom zapewni Ci idealne
+			warunki do spełniania Twoich potrzeb. Przekrocz granice i poszerzaj horyzonty w naszym wyjątkowym [nazwa].
+		</p>
+
+		<div class="layout__images">
+			<img
+				class="layout__image"
+				src="./images/W1.jpg"
+				alt=""
+				width="400"
+				height="400"
+			>
+			<img
+				class="layout__image"
+				src="./images/W2.jpg"
+				alt=""
+				width="400"
+				height="400"
+			>
+		</div>
+	</section>
+
+	<section class="inside container">
+		<div class="indise__info">
+			<h2 class="section-double-title">
+				<span>
+					Spojrzyj w przyszłość!
+				</span>
+				<span>
+					Odkryj tajemnice naszej wizualizacji 3D domu"
+				</span>
+			</h2>
+			<p class="inside__description general-text">
+				Wyobraź sobie możliwość spojrzenia w przyszłość i zobaczenia swojego idealnego domu w całej jego wspaniałości. Nasza
+				unikalna wizualizacja 3D pozwoli Ci odkryć tajemnice każdego pomieszczenia i zagłębić się w serce Twojego przyszłego
+				domu.
+			</p>
+		</div>
+
+		<figure class="inside__fogure">
+			<figcaption class="visually-hidden">wewnątrz budynku</figcaption>
+			<img class="inside__figure-image" src="./images/inside-house.png" width="600" height="400" alt="">
+		</figure>
+	</section>
+
+	<section class="gallery container">
+		<h2 class="gallery__title section-double-title">
+			<span>Twoja przyszłość w fotografii</span>
+			<span>Dotknij potencjału Twojego nowego domu</span>
+		</h2>
+
+		<div class="gallery__wrap" id="gallery">
+
+			<a class="gallery__link" href="./images/banner.jpg" data-fancybox data-caption="first image">
+				<img class="gallery__image" src="./images/banner.jpg" />
+			</a>
+			<a class="gallery__link" href="./images/about.jpg" data-fancybox data-caption="second image">
+				<img class="gallery__image" src="./images/about.jpg" />
+			</a>
+			<a class="gallery__link" href="./images/W1.jpg" data-fancybox data-caption="thrid image">
+				<img class="gallery__image" src="./images/W1.jpg" alt="dfgsdfghdf" />
+			</a>
+			<a class="gallery__link" href="./images/W2.jpg" data-fancybox data-caption="four image">
+				<img class="gallery__image" src="./images/W2.jpg" />
+			</a>
+
+		</div>
+	</section>
+
+	<div class="parallax parallax--two" aria-hidden="true"></div>
+
+	<section class="location container">
+		<h2 class="location__title section-double-title">
+			<span>
+				Otrzymaj to, czego zasługujesz
+			</span>
+			<span>
+				Luksus i udogodnienia tuż przed twoim progiem</h2>
+			</span>
+		</h2>
+
+		<img class="location__image" width="500" height="500" src="./images/location.png" alt="">
+
+	</section>
+
+	<section class="your-house container">
+		<h2 class="section-double-title">
+			<span>To może być</span>
+			<span>Twój dom</span>
+		</h2>
+
+		<a class="your-house__link" href="#">Wybierz dom</a>
+
+		<img class="your-house__image" src="./images/your-house.jpg" width="600" height="400" alt="">
+	</section>
+
+	<section class="about-us container">
+		<h2 class="about-us__title section-title">
+			Poznaj nas
+		</h2>
+
+		<a class="about-us__link" href="http://www.unicornarchitecture.com.pl/index.html">
+			<img class="about-us__logo" src="./images/logo_UNICORN_ARCHITECTURE.svg" width="200" height="100" alt="">
+		</a>
+
+		<p class="about-us__info">
+			Pracownia Unicorn Architecture powstała w listopadzie 2020 roku, jednakże zespół architektoniczny będący zalążkiem biura
+			działa wspólnie od 2014 roku.
+
+			Zajmujemy się architekturą, urbanistyką i projektami wnętrz. Projektujemy zespoły zabudowy mieszkaniowej wielorodzinnej
+			oraz jednorodzinnej, budynki usługowe, budynki biurowe oraz budynki przemysłowe.
+		</p>
+
+		<p class="about-us__info">
+			Pracownię prowadzi Jakub Pawlak, architekt, absolwent Wydziału Architektury i Urbanistyki Politechniki Poznańskiej,
+			który swoje doświadczenie zbierał w poznańskim biurze architektonicznym Litoborski+Marciniak a następnie w Warszawie w
+			JSK Architekci.
+
+			Należymy do grupy firm Unicorn, których początek sięga 1995 roku. Obszarem działalności grupy są architektura,
+			budownictwo oraz informatyka.
+		</p>
+	</section>
+
+	<section class="contact container">
+		<h2 class="section-title">Kontakt</h2>
+
+		<div class="contact__info">
+			<address class="contact__address general-text">
+				<span>UNICORN Architecture Sp. z o.o.</span>
+				<span>Rymarkiewicza 5a, 60-681 Poznań</span>
+			</address>
+
+			<a class="contacts__tel contact__link" href="tel:+48618629009">tel. (+48) 61 862 90 09</a>
+			<a class="contacts__mail contact__link" href="mailto:architecture@unicorn.com.pl">Email: architecture@unicorn.com.pl</a>
+		</div>
+
+		<div class="contact__form">
+
+		</div>
+	</section>
+
+	<script src="./scripts/bundle.js" type="module"></script>
+</body>
+</html>

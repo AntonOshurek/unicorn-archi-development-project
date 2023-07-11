@@ -1,0 +1,79 @@
+@import '../variables/variables.less';
+
+.your-house {
+	width: 100%;
+	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content 1fr;
+	gap: 40px;
+
+	@media (max-width: @tablet-width) {
+		grid-template-columns: 1fr;
+
+		& > .your-house__link {
+			justify-self: flex-start;
+		}
+	}
+}
+
+.your-house__link {
+	position: relative;
+	align-self: center;
+	justify-self: center;
+	padding: 5px 0;
+
+	font-family: var(--basci-font);
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--main-text-color);
+	text-decoration: none;
+
+	transition: all ease 0.5s;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 71%;
+		height: 2px;
+		background-color: var(--main-text-color);
+
+		transition: all ease 0.5s;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: -20%;
+		width: 71%;
+		height: 2px;
+		background-color: var(--main-text-color);
+
+		transition: all ease 0.5s;
+	}
+
+	&:hover {
+		color: var(--main-color);
+
+		&::before {
+			width: 0%;
+		}
+
+		&::after {
+			width: 0%;
+			left: 50%;
+		}
+	}
+}
+
+.your-house__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	grid-column: 1/-1;
+}
