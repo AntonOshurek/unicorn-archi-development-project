@@ -31,8 +31,8 @@ const {
 } = gulp;
 
 // paths
-const srcFolder = './src';
-const buildFolder = './app';
+const srcFolder = './source';
+const buildFolder = './build';
 const paths = {
   srcStyles: `${srcFolder}/styles/index.less`,
   srcSvg: `${srcFolder}/img/svg/**.svg`,
@@ -102,7 +102,7 @@ export const htmlBuild = () => {
 			return prior();
 	}
 	}))
-	.pipe(gulp.dest('./app'))
+	.pipe(gulp.dest(buildFolder))
 	.pipe(browserSync.stream());
 };
 

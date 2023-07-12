@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "18.x"
+          node-version: "14.x"
 
       - name: Installing Dependencies
         run: npm ci
@@ -29,7 +29,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          FOLDER: ./app
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOLDER: ./build
           BRANCH: gh-pages
           SINGLE_COMMIT: false
