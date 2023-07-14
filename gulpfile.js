@@ -79,7 +79,6 @@ export const html = () => {
 	return src([`${srcFolder}/**/*.html`])
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(dest(buildFolder))
-	.pipe(gulp.dest('./app'))
 	.pipe(browserSync.stream());
 };
 
