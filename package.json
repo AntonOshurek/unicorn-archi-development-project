@@ -2,7 +2,7 @@
 	"name": "unicorn-archi-development-project",
 	"version": "1.0.0",
 	"description": "project for unicorn archi firm fro development project",
-	"main": "index.js",
+	"main": "index.html",
   "scripts": {
     "test": "gulp validateMarkup --silent && gulp lintBemMarkup && stylelint \"./source/styles/**/*.less\" --custom-syntax postcss-less",
     "build": "gulp runBuild",
