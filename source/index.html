@@ -5,13 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Landing</title>
+	<title>Unicorn architecture developer project</title>
 
 	<link rel="icon" href="favicon.ico"> <!-- 32×32 -->
 	<!-- <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> -->
 	<!-- <link rel="apple-touch-icon" href="images/favicons/apple.png"> 180×180 -->
 	<!-- <link rel="manifest" href="manifest.webmanifest"> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<link rel="stylesheet" href="styles/style.min.css">
 </head>
 <body class="body">
@@ -132,22 +131,22 @@
 			<span>Dotknij potencjału Twojego nowego domu</span>
 		</h2>
 
-		<div class="gallery__wrap" id="gallery">
+		<ul class="gallery__list" id="gallery">
 
-			<a class="gallery__link" href="./images/banner.jpg" data-fancybox data-caption="first image">
-				<img class="gallery__image" src="./images/banner.jpg" />
-			</a>
-			<a class="gallery__link" href="./images/about.jpg" data-fancybox data-caption="second image">
-				<img class="gallery__image" src="./images/about.jpg" />
-			</a>
-			<a class="gallery__link" href="./images/W1.jpg" data-fancybox data-caption="thrid image">
-				<img class="gallery__image" src="./images/W1.jpg" alt="dfgsdfghdf" />
-			</a>
-			<a class="gallery__link" href="./images/W2.jpg" data-fancybox data-caption="four image">
-				<img class="gallery__image" src="./images/W2.jpg" />
-			</a>
+			<li class="gallery__item" href="./images/banner.jpg" data-fancybox data-caption="first image">
+				<img class="gallery__image" src="./images/banner.jpg" alt="gallery image"/>
+			</li>
+			<li class="gallery__item" href="./images/about.jpg" data-fancybox data-caption="second image">
+				<img class="gallery__image" src="./images/about.jpg" alt="gallery image"/>
+			</li>
+			<li class="gallery__item" href="./images/W1.jpg" data-fancybox data-caption="thrid image">
+				<img class="gallery__image" src="./images/W1.jpg" alt="gallery image" />
+			</li>
+			<li class="gallery__item" href="./images/W2.jpg" data-fancybox data-caption="four image">
+				<img class="gallery__image" src="./images/W2.jpg" alt="gallery image"/>
+			</li>
 
-		</div>
+		</ul>
 	</section>
 
 	<div class="parallax parallax--two" aria-hidden="true"></div>
