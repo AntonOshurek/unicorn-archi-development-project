@@ -9,10 +9,9 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: min-content min-content 1fr;
 	grid-template-areas:
-			'title data data'
-			'info data data'
-			'images images images'
-	;
+		'title data data'
+		'info data data'
+		'images images images';
 	gap: 20px;
 
 	background-color: var(--bg);
@@ -24,8 +23,7 @@
 			'title'
 			'data'
 			'info'
-			'images'
-		;
+			'images';
 	}
 }
 
@@ -91,7 +89,7 @@
 	}
 
 	&:nth-child(2) {
-		&>.layout__data-title {
+		& > .layout__data-title {
 			grid-column: 3/3;
 		}
 
@@ -103,7 +101,7 @@
 	}
 
 	&:last-child {
-		&>.layout__data-title {
+		& > .layout__data-title {
 			grid-column: 1/2;
 		}
 

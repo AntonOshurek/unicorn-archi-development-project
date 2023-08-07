@@ -4,7 +4,7 @@
 	"description": "project for unicorn archi firm fro development project",
 	"main": "index.js",
   "scripts": {
-    "test": "gulp validateMarkup --silent && gulp lintBemMarkup && stylelint \"./src/styles/**/*.less\" --custom-syntax postcss-less",
+    "test": "gulp validateMarkup --silent && gulp lintBemMarkup && stylelint \"./source/styles/**/*.less\" --custom-syntax postcss-less",
     "build": "gulp runBuild",
     "start": "gulp runDev"
   },
