@@ -1,35 +1,37 @@
+@import '../variables/variables';
+
 @font-face {
-	font-family: 'Montserrat';
-	font-display: swap;
 	src: url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
 		url('../fonts/Montserrat-VariableFont_wght.woff') format('woff');
+	font-family: Montserrat;
+	font-display: swap;
 }
 
 * {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: var(--basci-font);
 }
 
 .container {
-	max-width: @desctope-width;
 	margin: 0 auto;
+	max-width: $desctope-width;
 }
 
 .visually-hidden {
 	position: absolute;
+	overflow: hidden;
 	width: 1px;
 	height: 1px;
-	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
 
 .body {
-	width: 100%;
-	min-height: 100vh;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	min-height: 100vh;
 	background-color: var(--bg);
 
 	&--scrolloff {

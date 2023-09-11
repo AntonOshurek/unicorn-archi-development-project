@@ -1,13 +1,12 @@
-@import '../variables/variables.less';
+@import '../variables/variables';
 
 .parallax {
 	min-height: 500px;
-
-	object-fit: cover;
-	background-attachment: fixed;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	object-fit: cover;
 
 	&--one {
 		background-image: url('../images/banner.jpg');
@@ -17,7 +16,7 @@
 		background-image: url('../images/parallax-2.jpg');
 	}
 
-	@media (max-width: @mobile-width) {
+	@media (max-width: $mobile-width) {
 		min-height: 300px;
 	}
 }
