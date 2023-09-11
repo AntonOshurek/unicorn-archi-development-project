@@ -1,37 +1,29 @@
-//width
-@desctope-width: 1200px;
-@tablet-width: 900px;
-@mobile-width: 600px;
-
-@banner-height: 150vh;
+/* width */
+$desctope-width: 1200px;
+$tablet-width: 900px;
+$mobile-width: 600px;
+$banner-height: 150vh;
 
 :root {
 	--basci-font: 'Montserrat', 'Arial', sans-serif;
-
-	--bg: #f7f7f7;
-
-	--white-text-color: #ffffff;
+	--bg: #F7F7F7;
+	--white-text-color: #FFFFFF;
 	--main-text-color: #141414;
-
-	--main-color: #1953cf;
-
+	--main-color: #1953CF;
 	--standart-side-padding: 20px;
 	--standart-section-top-padding: 120px;
-
 	--section-title-first-child-size: 50px;
 	--section-title-first-child-weight: 500;
 	--section-tablet-title-first-child-size: 40px;
 	--section-tablet-title-first-child-weight: 500;
 	--section-mobile-title-first-child-size: 30px;
 	--section-mobile-title-first-child-weight: 500;
-
 	--section-title-second-child-size: 40px;
 	--section-title-second-child-weight: 400;
 	--section-tablet-title-second-child-size: 30px;
 	--section-tablet-title-second-child-weight: 400;
 	--section-mobile-title-second-child-size: 20px;
 	--section-mobile-title-second-child-weight: 400;
-
 	--standart-font-size: 18px;
 	--standart-font-weight: 400;
 	--subtext-font-size: 16px;

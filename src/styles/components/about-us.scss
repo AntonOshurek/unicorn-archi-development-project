@@ -1,18 +1,17 @@
-@import '../variables/variables.less';
+@import '../variables/variables';
 
 .about-us {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(4, min-content);
+	padding: var(--standart-side-padding);
 	gap: 30px;
 
-	padding: var(--standart-side-padding);
-
-	@media (max-width: @tablet-width) {
+	@media (max-width: $tablet-width) {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
 		align-items: flex-start;
+		justify-content: flex-start;
 		gap: 20px;
 	}
 }
@@ -38,10 +37,9 @@
 
 .about-us__info {
 	grid-row: 3/-1;
-
 	font-family: var(--basci-font);
-	font-size: var(--subtext-font-size);
 	font-weight: var(--subtext-font-weight);
+	font-size: var(--subtext-font-size);
 	color: var(--main-text-color);
 
 	&:first-child {
