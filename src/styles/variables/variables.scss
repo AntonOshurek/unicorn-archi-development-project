@@ -2,16 +2,41 @@
 $desctope-width: 1200px;
 $tablet-width: 900px;
 $mobile-width: 600px;
-$banner-height: 150vh;
+$banner-height: 120vh;
 
 :root {
+	/* fonts */
 	--basci-font: 'Montserrat', 'Arial', sans-serif;
+
+	/* colors */
 	--bg: #F7F7F7;
 	--white-text-color: #FFFFFF;
 	--main-text-color: #141414;
 	--main-color: #1953CF;
+
+	/* paddings */
 	--standart-side-padding: 20px;
 	--standart-section-top-padding: 120px;
+
+	/* font sizes */
+
+	/* typography */
+	--typography-big-title-size: 50px;
+	--typography-big-title-weight: 600;
+	--typography-mobile-big-title-size: 40px;
+	--typography-mobile-big-title-weight: 600;
+	--typography-medium-title-size: 40px;
+	--typography-medium-title-weight: 600;
+	--typography-mobile-medium-title-size: 30px;
+	--typography-mobile-medium-title-weight: 600;
+	--typography-smal-title-size: 30px;
+	--typography-smal-title-weight: 600;
+	--typography-xsmal-title-size: 12px;
+	--typography-xsmal-title-weight: 600;
+	--typography-general-text-size: 16px;
+	--typography-general-text-weight: 400;
+
+	/* old - for remove! */
 	--section-title-first-child-size: 50px;
 	--section-title-first-child-weight: 500;
 	--section-tablet-title-first-child-size: 40px;
@@ -26,6 +51,8 @@ $banner-height: 150vh;
 	--section-mobile-title-second-child-weight: 400;
 	--standart-font-size: 18px;
 	--standart-font-weight: 400;
+	--text-font-size: 18px;
+	--text-font-weight: 400;
 	--subtext-font-size: 16px;
 	--subtext-font-weight: 400;
 }

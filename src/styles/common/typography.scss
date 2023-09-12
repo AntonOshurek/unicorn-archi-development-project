@@ -1,0 +1,35 @@
+@import '../variables/variables';
+
+.typography-big-title {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-big-title-weight);
+	font-size: var(--typography-big-title-size);
+
+	@media (max-width: $mobile-width) {
+		font-weight: var(--typography-mobile-big-title-weight);
+		font-size: var(--typography-mobile-big-title-size);
+	}
+}
+
+.typography-medium-title {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-medium-title-weight);
+	font-size: var(--typography-medium-title-size);
+
+	@media (max-width: $mobile-width) {
+		font-weight: var(--typography-mobile-medium-title-weight);
+		font-size: var(--typography-mobile-medium-title-size);
+	}
+}
+
+.typography-x-smal-title {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-xsmal-title-weight);
+	font-size: var(--typography-xsmal-title-size);
+}
+
+.typography-general-text {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-general-text-weight);
+	font-size: var(--typography-general-text-size);
+}

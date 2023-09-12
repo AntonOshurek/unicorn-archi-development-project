@@ -15,11 +15,11 @@
 
 	<section class="banner">
 		<div class="banner__wrap container">
-			<h1 class="banner__title section-title">
+			<h1 class="banner__title typography-big-title">
 				<span>Nazwa projektu</span>
 				<span>Poznań</span>
 			</h1>
-			<p class="banner__text">
+			<p class="banner__text typography-medium-title">
 				Otwórz drzwi do Twojego marzenia
 				<br>
 				Unikalne domy w Poznaniu
@@ -27,29 +27,99 @@
 		</div>
 	</section>
 
-	<section class="about container">
-		<h2 class="visually-hidden">o projekcie</h2>
-		<p class="about__title section-double-title">
-			<span>
-				Twoja historia zaczyna się tutaj
-			</span>
-			<span>
+	<section class="about">
+		<div class="about__wrap container">
+			<h2 class="about__title typography-x-smal-title">o inwestycji</h2>
+			<p class="about__slogan about__header-block typography-big-title">
 				Idealny dom w samym sercu Poznania
-			</span>
-		</p>
-		<p class="about__info general-text">
-			Nasz projekt domu to luksusowe rozwiązanie dla nowoczesnej rodziny, poszukującej komfortu, funkcjonalności i stylu w
-			jednym miejscu. Nasze innowacyjne plany mieszkań oferują przestronne i eleganckie wnętrza, doskonale dopasowane do
-			codziennego życia i rozrywki. Zlokalizowany w samym sercu [miejscowość], nasz dom pozwoli Ci cieszyć się wszystkimi
-			atutami tego urokliwego regionu. Odkryj swoją historię w naszym idealnym domu i stwórz niezapomniane chwile dla całej
-			rodziny.
-		</p>
-		<img
-			class="about__image"
-			src="./images/about.jpg"
-			alt="budynek z boku"
-			width="400"
-			height="400">
+			</p>
+			<p class="about__subslogan typography-medium-title">
+				Twoja wygodna <br>	przystań
+			</p>
+			<p class="about__info typography-general-text">
+				<span>
+					Nasz projekt domu to luksusowe rozwiązanie dla nowoczesnej rodziny, poszukującej komfortu, funkcjonalności i stylu w
+					jednym miejscu.
+					Nasze innowacyjne plany mieszkań oferują przestronne i eleganckie wnętrza, doskonale dopasowane do
+					codziennego życia i rozrywki.
+				</span>
+				<span>
+					Zlokalizowany w samym sercu [miejscowość], nasz dom pozwoli Ci cieszyć się wszystkimi
+					atutami tego urokliwego regionu. Odkryj swoją historię w naszym idealnym domu i stwórz niezapomniane chwile dla całej
+					rodziny.
+				</span>
+			</p>
+		</div>
+
+		<div class="about-slider container">
+			<!-- Slider main container -->
+			<div class="swiper about-slider__swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img
+							alt=""
+							src="./images/about.jpg"
+							width="500"
+							height="400"
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							alt=""
+							src="./images/banner.jpg"
+							width="500"
+							height="400"
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							alt=""
+							src="./images/parallax-2.jpg"
+							width="500"
+							height="400"
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							alt=""
+							src="./images/W1.jpg"
+							width="600"
+							height="400"
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							alt=""
+							src="./images/your-house.jpg"
+							width="600"
+							height="400"
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							alt=""
+							src="./images/W2.jpg"
+							width="600"
+							height="400"
+						/>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<div class="about-slider__controls">
+				<button class="about-slider__navigation-button about-slider__btn-prev">prev</button>
+				<button class="about-slider__navigation-button about-slider__btn-next">next</button>
+			</div>
+		</div>
 	</section>
 
 	<div class="parallax parallax--one" aria-hidden="true"></div>

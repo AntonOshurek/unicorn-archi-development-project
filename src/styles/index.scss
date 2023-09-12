@@ -2,7 +2,8 @@
 @import './variables/variables';
 @import './global/global-components';
 @import './components/banner';
-@import './components/about';
+@import './components/about/about';
+@import './components/about/about-slider';
 @import './components/layout';
 @import './components/parallax';
 @import './components/inside';
@@ -11,3 +12,6 @@
 @import './components/your-house';
 @import './components/about-us';
 @import './components/contact';
+@import './common/typography';
+/* libs */
+@import './libs/swiper.scss';

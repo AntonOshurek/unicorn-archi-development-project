@@ -1,0 +1,72 @@
+@import '../../variables/variables';
+
+.about {
+	padding: var(--standart-section-top-padding) 0;
+	background-color: var(--bg);
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
+}
+
+.about__wrap {
+	padding: 0 var(--standart-side-padding);
+	display: grid;
+	grid-template-areas:
+		"slogan slogan"
+		"title info"
+		"subslogan info"
+	;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content min-content 1fr;
+	width: 100%;
+	height: 100%;
+
+	@media (max-width: $tablet-width) {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 20px;
+	}
+}
+
+.about__title {
+	grid-area: title;
+	padding-bottom: 10px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--main-text-color);
+}
+
+.about__slogan {
+	grid-area: slogan;
+	color: var(--main-text-color);
+}
+
+.about__header-block {
+	padding-bottom: 50px;
+
+	@media (max-width: $tablet-width) {
+		padding-bottom: 0;
+	}
+}
+
+.about__subslogan {
+	grid-area: subslogan;
+	color: var(--main-text-color);
+
+	@media (max-width: $tablet-width) {
+			display: none;
+	}
+}
+
+.about__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	grid-area: info;
+	color: var(--main-text-color);
+	gap: 15px;
+}
