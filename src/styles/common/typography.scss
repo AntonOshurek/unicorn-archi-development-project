@@ -1,0 +1,23 @@
+.typography__big-title {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-big-title-weight);
+	font-size: var(--typography-big-title-size);
+}
+
+.typography__medium-title {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-medium-title-weight);
+	font-size: var(--typography-medium-title-size);
+}
+
+.typography__x-smal-title {
+	font-family: var(--basci-font);
+	font-size: var(--typography-xsmal-title-size);
+	font-weight: var(--typography-xsmal-title-weight);
+}
+
+.typography__general-text {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-general-text-weight);
+	font-size: var(--typography-general-text-size);
+}

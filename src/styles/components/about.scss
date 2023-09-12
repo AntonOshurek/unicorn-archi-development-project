@@ -1,41 +1,70 @@
 @import '../variables/variables';
 
 .about {
+	background-color: var(--bg);
+	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+}
+
+.about__wrap {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(3, min-content);
-	padding: var(--standart-section-top-padding) 0;
+	grid-template-rows: min-content min-content 1fr;
+
+	grid-template-areas:
+		"slogan slogan"
+		"title info"
+		"subslogan info"
+	;
+
 	width: 100%;
 	height: 100%;
-	background-color: var(--bg);
-	row-gap: 80px;
 
 	@media (max-width: $tablet-width) {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		gap: 40px;
+		gap: 20px;
 	}
 }
 
 .about__title {
-	align-self: center;
-	grid-column: 1 / -1;
-	padding: 0 var(--standart-side-padding);
+	grid-area: title;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	color: var(--main-text-color);
+	letter-spacing: 3px;
+}
+
+.about__slogan {
+	grid-area: slogan;
+	color: var(--main-text-color);
+}
+
+.about__header-block {
+	padding-bottom: 50px;
+
+	@media (max-width: $tablet-width) {
+		padding-bottom: 0;
+	}
+}
+
+.about__subslogan {
+	grid-area: subslogan;
+	color: var(--main-text-color);
+
+	@media (max-width: $tablet-width) {
+			display: none;
+	}
 }
 
 .about__info {
-	align-self: center;
-	grid-row: 2 / -1;
-	padding: 0 var(--standart-side-padding);
-}
+	grid-area: info;
 
-.about__image {
-	align-self: center;
-	justify-self: strt;
-	grid-column: 1 / 2;
-	width: 100%;
-	height: max-content;
-	object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 15px;
+	color: var(--main-text-color);
 }
