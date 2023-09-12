@@ -31,9 +31,9 @@
 	justify-content: center;
 	justify-self: left;
 	grid-column: 2 / -1;
+	white-space: nowrap;
 	color: var(--white-text-color);
 	gap: 5px;
-	white-space: nowrap;
 
 	&::before {
 		content: '';
@@ -51,9 +51,6 @@
 	align-self: center;
 	justify-self: left;
 	grid-column: 1 / -1;
-	font-family: var(--basci-font);
-	font-weight: 600;
-	font-size: 45px;
 	text-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
 	color: var(--white-text-color);
 }
