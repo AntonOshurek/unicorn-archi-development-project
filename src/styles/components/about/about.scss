@@ -1,11 +1,16 @@
-@import '../variables/variables';
+@import '../../variables/variables';
 
 .about {
-	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+	padding: var(--standart-section-top-padding) 0;
 	background-color: var(--bg);
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
 }
 
 .about__wrap {
+	padding: 0 var(--standart-side-padding);
 	display: grid;
 	grid-template-areas:
 		"slogan slogan"

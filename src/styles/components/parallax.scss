@@ -7,6 +7,7 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	object-fit: cover;
+	position: relative;
 
 	&--one {
 		background-image: url('../images/banner.jpg');
