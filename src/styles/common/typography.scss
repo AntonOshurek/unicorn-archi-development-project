@@ -28,6 +28,11 @@
 	font-size: var(--typography-xsmal-title-size);
 }
 
+.typography-section-title {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
 .typography-general-text {
 	font-family: var(--basci-font);
 	font-weight: var(--typography-general-text-weight);
