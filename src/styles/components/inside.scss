@@ -1,41 +1,100 @@
 @import '../variables/variables';
 
 .inside {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: min-content 1fr;
-	padding: var(--standart-side-padding);
-	padding-bottom: var(--standart-section-top-padding);
-	width: 100%;
-	background-color: var(--bg);
-	gap: 40px;
+	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+	background-color: var(--grey-bg);
 }
 
-.inside__info {
+.inside__wrap {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 40px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, min-content);
+	gap: 20px;
+}
 
-	@media (max-width: $tablet-width) {
-		grid-template-columns: 1fr;
-		gap: 20px;
+.inside__title {
+	color: var(--main-text-color);
+}
+
+.inside__slogan {
+	color: var(--main-text-color);
+}
+
+.inside__slider {
+	padding-top: 50px;
+	width: 100%;
+}
+
+.house-inside {
+	display: grid;
+	grid-column-gap: 40px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.inside__3d-title {
+	display: grid;
+	align-items: center;
+	grid-column-gap: 30px;
+	grid-template-columns: max-content 1fr;
+	color: var(--main-text-color);
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 2px;
+		background-color: var(--main-text-color);
 	}
 }
 
-.inside__description {
+.house-inside__figure {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: left;
+	width: 100%;
+	height: 100%;
 }
 
-.inside__fogure {
-	width: 100%;
-}
-
-.inside__figure-image {
-	width: 100%;
-
-	// height: 600px;
+.house-inside__3d-image {
 	object-fit: contain;
 }
+
+.house-inside__floorplan {
+	display: grid;
+	grid-row-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content 1fr;
+}
+
+.house-inside__property {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.house-inside__property-title {
+	grid-row: 1;
+	color: var(--main-text-color);
+
+	& > span {
+		position: relative;
+		display: flex;
+		width: max-content;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: 1px;
+			background-color: var(--main-text-color);
+		}
+	}
+}
+
+.house-inside__property-info {
+	grid-row: 2;
+	font-weight: 500;
+	font-size: 24px;
+	color: var(--main-text-color);
+}
+

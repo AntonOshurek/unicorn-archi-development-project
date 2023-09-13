@@ -22,6 +22,17 @@
 	}
 }
 
+.typography-smal-title {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-smal-title-weight);
+	font-size: var(--typography-smal-title-size);
+
+	@media (max-width: $mobile-width) {
+		font-weight: var(--typography-mobile-smal-title-weight);
+		font-size: var(--typography-mobile-smal-title-size);
+	}
+}
+
 .typography-x-smal-title {
 	font-family: var(--basci-font);
 	font-weight: var(--typography-xsmal-title-weight);

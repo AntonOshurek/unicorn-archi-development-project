@@ -125,76 +125,100 @@
 	<div class="parallax parallax--one" aria-hidden="true"></div>
 
 	<section class="layout container">
-		<div class="layout__info-wrap">
-			<h2 class="layout__title typography-x-smal-title typography-section-title">
-				wnętrza domu
-			</h2>
+		<div class="layout__wrap">
+			<div class="layout__info-wrap">
+				<h2 class="layout__title typography-x-smal-title typography-section-title">
+					wnętrza domu
+				</h2>
 
-			<p class="layout__slogan typography-big-title">
-				Znajdź swoją <br>przestrzeń
-			</p>
+				<p class="layout__slogan typography-big-title">
+					Znajdź swoją <br>przestrzeń
+				</p>
 
-			<p class="layout__info typography-general-text">
-				Odkryj przestronne i funkcjonalne wnętrza naszego domu, które zapewnią Ci nieograniczoną przestrzeń do spełniania marzeń
-				i realizacji pasji. Ciesz się doskonale zaprojektowanymi przestrzeniami, które harmonijnie łączą elegancję z wygodą.
-				Przez starannie dobrane detale i wysokiej jakości materiały, stworzyliśmy wnętrze, które emanuje stylem i klasyką.
-				Niezależnie od tego, czy potrzebujesz miejsca na relaks, pracę czy spotkania z bliskimi, nasz dom zapewni Ci idealne
-				warunki do spełniania Twoich potrzeb. Przekrocz granice i poszerzaj horyzonty w naszym wyjątkowym [nazwa].
-			</p>
+				<p class="layout__info typography-general-text">
+					Odkryj przestronne i funkcjonalne wnętrza naszego domu, które zapewnią Ci nieograniczoną przestrzeń do spełniania marzeń
+					i realizacji pasji. Ciesz się doskonale zaprojektowanymi przestrzeniami, które harmonijnie łączą elegancję z wygodą.
+					Przez starannie dobrane detale i wysokiej jakości materiały, stworzyliśmy wnętrze, które emanuje stylem i klasyką.
+					Niezależnie od tego, czy potrzebujesz miejsca na relaks, pracę czy spotkania z bliskimi, nasz dom zapewni Ci idealne
+					warunki do spełniania Twoich potrzeb. Przekrocz granice i poszerzaj horyzonty w naszym wyjątkowym [nazwa].
+				</p>
+			</div>
+
+			<ul class="layout__list">
+				<li class="layout__list-item">
+					<p class="layout__list-title"><span>2</span> DOMY</p>
+					<!-- <p class="layout__data-info">2</p> -->
+				</li>
+				<li class="layout__list-item">
+					<p class="layout__list-title">POWIERZCHNIA <span>180 m</span></p>
+					<!-- <p class="layout__data-info">180 m</p> -->
+				</li>
+				<li class="layout__list-item">
+					<p class="layout__list-title">DZIAŁKI <span>364 m</span></p>
+					<!-- <p class="layout__data-info">364 m</p> -->
+				</li>
+			</ul>
+
+			<img
+				class="layout__image"
+				src="./images/W1.jpg"
+				alt="wewnątrz budynku"
+				width="400"
+				height="400"
+			>
+			<img
+				class="layout__image"
+				src="./images/W2.jpg"
+				alt="wewnątrz budynku"
+				width="400"
+				height="400"
+			>
 		</div>
-
-		<ul class="layout__list">
-			<li class="layout__list-item">
-				<p class="layout__list-title"><span>2</span> DOMY</p>
-				<!-- <p class="layout__data-info">2</p> -->
-			</li>
-			<li class="layout__list-item">
-				<p class="layout__list-title">POWIERZCHNIA <span>180 m</span></p>
-				<!-- <p class="layout__data-info">180 m</p> -->
-			</li>
-			<li class="layout__list-item">
-				<p class="layout__list-title">DZIAŁKI <span>364 m</span></p>
-				<!-- <p class="layout__data-info">364 m</p> -->
-			</li>
-		</ul>
-
-		<img
-			class="layout__image"
-			src="./images/W1.jpg"
-			alt="wewnątrz budynku"
-			width="400"
-			height="400"
-		>
-		<img
-			class="layout__image"
-			src="./images/W2.jpg"
-			alt="wewnątrz budynku"
-			width="400"
-			height="400"
-		>
 	</section>
 
-	<section class="inside container">
-		<div class="inside__info">
-			<h2 class="section-double-title">
-				<span>
-					Spojrzyj w przyszłość!
-				</span>
-				<span>
-					Odkryj tajemnice naszej wizualizacji 3D domu"
-				</span>
-			</h2>
-			<p class="inside__description general-text">
-				Wyobraź sobie możliwość spojrzenia w przyszłość i zobaczenia swojego idealnego domu w całej jego wspaniałości. Nasza
-				unikalna wizualizacja 3D pozwoli Ci odkryć tajemnice każdego pomieszczenia i zagłębić się w serce Twojego przyszłego
-				domu.
+	<section class="inside">
+		<div class="inside__wrap container">
+			<h2 class="inside__title typography-x-smal-title typography-section-title">typy mieszkań</h2>
+			<p class="inside__slogan typography-big-title">
+				Odkryj tajemnice naszej wizualizacji 3D domu
 			</p>
-		</div>
 
-		<figure class="inside__fogure">
-			<figcaption class="visually-hidden">wewnątrz budynku</figcaption>
-			<img class="inside__figure-image" src="./images/inside-house.png" width="600" height="400" alt="">
-		</figure>
+			<div class="inside__slider">
+				<article class="house-inside">
+					<div class="house-inside__three-dimensional">
+						<h3 class="inside__3d-title typography-medium-title">Budynek A</h3>
+
+						<figure class="house-inside__figure">
+							<figcaption class="visually-hidden">wewnątrz budynku</figcaption>
+							<img class="house-inside__3d-image" src="./images/house-inside__three-dimensional.png" width="600" height="400" alt="">
+						</figure>
+					</div>
+
+					<div class="house-inside__floorplan">
+						<dl class="house-inside__property">
+							<dt class="house-inside__property-title typography-smal-title">
+								<span>Powierzchnia</span>
+							</dt>
+							<dd class="house-inside__property-info">58.41 m2</dd>
+
+							<dt class="house-inside__property-title typography-smal-title">
+								<span>Kondygnacja</span>
+							</dt>
+							<dd class="house-inside__property-info">Parter</dd>
+
+							<dt class="house-inside__property-title typography-smal-title">
+								<span>Ilość pokoi</span>
+							</dt>
+							<dd class="house-inside__property-info">3</dd>
+						</dl>
+						<figure class="house-inside__figure">
+							<figcaption class="visually-hidden">wewnątrz budynku</figcaption>
+							<img class="house-inside__floorplan-image" src="./images/house-inside__floorplan.jpg" width="600" height="400" alt="">
+						</figure>
+					</div>
+				</article>
+			</div>
+		</div>
 	</section>
 
 	<section class="gallery container">
