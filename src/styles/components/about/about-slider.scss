@@ -50,7 +50,7 @@
 	height: 100%;
 }
 
-.swiper-slide {
+.about-slider__slide {
 	max-width: 500px;
 
 	@media (max-width: $mobile-width) {
@@ -58,7 +58,7 @@
 	}
 }
 
-.swiper-slide > img {
+.about-slider__slide > img {
 	display: flex;
 	width: 100%;
 	height: 100%;
