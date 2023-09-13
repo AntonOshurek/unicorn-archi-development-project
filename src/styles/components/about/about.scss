@@ -4,7 +4,7 @@
 	display: grid;
 	grid-row-gap: 30px;
 	grid-template-columns: 1fr;
-	padding: var(--standart-section-top-padding) 0;
+	padding: var(--standart-section-top-padding) var(--standart-side-padding);
 	background-color: var(--bg);
 }
 
@@ -17,7 +17,6 @@
 	;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content min-content 1fr;
-	padding: 0 var(--standart-side-padding);
 	width: 100%;
 	height: 100%;
 
