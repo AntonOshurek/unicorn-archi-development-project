@@ -1,8 +1,11 @@
-@import '../variables/variables';
+@import '../../variables/variables';
 
 .inside {
+	display: flex;
+	flex-direction: column;
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
 	background-color: var(--grey-bg);
+	gap: 50px;
 }
 
 .inside__titles-wrap {
@@ -18,19 +21,6 @@
 
 .inside__slogan {
 	color: var(--main-text-color);
-}
-
-.inside__slider {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 50px;
-	width: 100%;
-}
-
-.inside__slider-swiper {
-	width: 100%;
-	height: 100%;
 }
 
 .house-inside {

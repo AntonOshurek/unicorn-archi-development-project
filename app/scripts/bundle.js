@@ -128,14 +128,14 @@ __webpack_require__.r(__webpack_exports__);
 
 const insideSlider = () => {
   // eslint-disable-next-line no-unused-vars
-  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".inside__slider-swiper", {
+  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".inside-slider__swiper", {
     direction: "horizontal",
     loop: true,
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation],
     spaceBetween: 50,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".inside-slider__next-btn",
+      prevEl: ".inside-slider__prev-btn"
     }
   });
 };

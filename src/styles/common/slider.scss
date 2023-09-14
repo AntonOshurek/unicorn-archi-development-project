@@ -1,0 +1,33 @@
+.slider-basic-button {
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+	pointer-events: all;
+
+	&::after {
+		display: none;
+	}
+
+	& > svg {
+		width: 40px;
+		height: 40px;
+
+		& path {
+			fill: var(--main-color);
+		}
+	}
+}
+
+// .slider-button-prev {
+
+// }
+
+.slider-button-next {
+	& > svg {
+		transform: rotate(180deg);
+	}
+}
