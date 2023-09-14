@@ -5,11 +5,11 @@
 	background-color: var(--grey-bg);
 }
 
-.inside__wrap {
+.inside__titles-wrap {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, min-content);
-	gap: 20px;
+	gap: var(--section-titles-block-margin);
 }
 
 .inside__title {
