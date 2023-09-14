@@ -116,8 +116,14 @@
 			</div>
 
 			<div class="about-slider__controls">
-				<button class="about-slider__navigation-button about-slider__btn-prev">prev</button>
-				<button class="about-slider__navigation-button about-slider__btn-next">next</button>
+				<button class="about-slider__navigation-button about-slider__btn-prev slider-basic-button slider-button-prev">
+					<span class="visually-hidden">prev slide</span>
+					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+				</button>
+				<button class="about-slider__navigation-button about-slider__btn-next slider-basic-button slider-button-next">
+					<span class="visually-hidden">next slide</span>
+					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+				</button>
 			</div>
 		</div>
 	</section>
@@ -177,16 +183,16 @@
 	</section>
 
 	<section class="inside">
-		<div class="inside__wrap container">
+		<div class="inside__titles-wrap container">
 			<h2 class="inside__title typography-x-smal-title typography-section-title">typy mieszkań</h2>
 			<p class="inside__slogan typography-big-title">
 				Odkryj tajemnice naszej wizualizacji 3D domu
 			</p>
 		</div>
 
-		<div class="inside__slider container">
+		<div class="inside-slider container">
 				<!-- Slider main container -->
-			<div class="swiper inside__slider-swiper">
+			<div class="swiper inside-slider__swiper">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
@@ -262,34 +268,115 @@
 					</div>
 				</div>
 
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+
+				<div class="inside-slider__controls">
+					<button class="inside-slider__btn inside-slider__prev-btn slider-basic-button slider-button-prev">
+						<span class="visually-hidden">prev slide</span>
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+					</button>
+					<button class="inside-slider__btn inside-slider__next-btn slider-basic-button slider-button-next">
+						<span class="visually-hidden">next slide</span>
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+					</button>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="gallery container">
-		<h2 class="gallery__title section-double-title">
-			<span>Twoja przyszłość w fotografii</span>
-			<span>Dotknij potencjału Twojego nowego domu</span>
-		</h2>
+	<section class="gallery">
+		<div class="gallery__titles-wrap container">
+			<h2 class="gallery__title typography-x-smal-title typography-section-title">Galeria zdjęć</h2>
+			<p class="gallery__slogan typography-big-title">
+				Twoja przyszłość w fotografii
+			</p>
+		</div>
 
-		<ul class="gallery__list" id="gallery">
+		<div class="gallery-slider container">
+			<h3 class="gallery-slider__title typography-smal-title">aktualne zdjęcia z budowy</h3>
+			<!-- Slider main container -->
+			<div class="swiper gallery-slider__swiper gallery-slider__swiper--construction">
+				<!-- Additional required wrapper -->
+				<ul class="swiper-wrapper">
+					<!-- Slides -->
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__1.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__2.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__3.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__4.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__1.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__2.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__3.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/stan-budowy/stan-budowy__4.jpg" alt="gallery image" width="300" height="300">
+					</li>
+				</ul>
 
-			<li class="gallery__item">
-				<img class="gallery__image" src="./images/banner.jpg" alt="gallery image" width="200" height="200">
-			</li>
-			<li class="gallery__item">
-				<img class="gallery__image" src="./images/about.jpg" alt="gallery image" width="200" height="200">
-			</li>
-			<li class="gallery__item">
-				<img class="gallery__image" src="./images/W1.jpg" alt="gallery image" width="200" height="200">
-			</li>
-			<li class="gallery__item">
-				<img class="gallery__image" src="./images/W2.jpg" alt="gallery image" width="200" height="200">
-			</li>
+				<div class="gallery-slider__controls">
+					<button class=" gallery-slider__btn gallery-slider__btn--prev-construction slider-basic-button slider-button-prev">
+						<span class="visually-hidden">prev slide</span>
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+					</button>
+					<button class=" gallery-slider__btn gallery-slider__btn--next-construction slider-basic-button slider-button-next">
+						<span class="visually-hidden">next slide</span>
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+					</button>
+				</div>
+			</div>
+		</div>
 
-		</ul>
+		<div class="gallery-slider container">
+			<h3 class="gallery-slider__title typography-smal-title">zdjęcia konceptowe</h3>
+			<!-- Slider main container -->
+			<div class="swiper gallery-slider__swiper gallery-slider__swiper--concept">
+				<!-- Additional required wrapper -->
+				<ul class="swiper-wrapper">
+					<!-- Slides -->
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/banner.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/about.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/W1.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/W2.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/banner.jpg" alt="gallery image" width="300" height="300">
+					</li>
+					<li class="swiper-slide gallery-slider__slide">
+						<img class="gallery-slider__slide-image" src="./images/about.jpg" alt="gallery image" width="300" height="300">
+					</li>
+				</ul>
+
+				<div class="gallery-slider__controls">
+					<button class=" gallery-slider__btn gallery-slider__btn--prev-concept slider-basic-button slider-button-prev">
+						<span class="visually-hidden">prev slide</span>
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+					</button>
+					<button class=" gallery-slider__btn gallery-slider__btn--next-concept slider-basic-button slider-button-next">
+						<span class="visually-hidden">next slide</span>
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="48" viewBox="0 -960 960 960" width="48"><path d="M423-59 2-480l421-421 78 79-342 342 342 342-78 79Z"/></svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<div class="parallax parallax--two" aria-hidden="true"></div>

@@ -3,15 +3,15 @@ import { Navigation, } from "swiper/modules";
 
 const insideSlider = () => {
 	// eslint-disable-next-line no-unused-vars
-	const swiper = new Swiper(".inside__slider-swiper", {
+	const swiper = new Swiper(".inside-slider__swiper", {
 		direction: "horizontal",
 		loop: true,
 		modules: [Navigation],
 		spaceBetween: 50,
 
 		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
+			nextEl: ".inside-slider__next-btn",
+			prevEl: ".inside-slider__prev-btn",
 		},
 	});
 }

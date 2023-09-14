@@ -1,0 +1,24 @@
+@import '../../variables/variables';
+
+.gallery {
+	display: grid;
+	grid-row-gap: 40px;
+	grid-template-columns: 1fr;
+	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+	background-color: var(--bg);
+}
+
+.gallery__titles-wrap {
+	display: grid;
+	grid-gap: var(--section-titles-block-margin);
+	grid-template-columns: 1fr;
+	width: 100%;
+}
+
+.gallery__title {
+	color: var(--main-text-color);
+}
+
+.gallery__slogan {
+	color: var(--main-text-color);
+}
