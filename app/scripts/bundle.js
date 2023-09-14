@@ -63,13 +63,36 @@ __webpack_require__.r(__webpack_exports__);
 
 const gallerySlider = () => {
   // eslint-disable-next-line no-unused-vars
-  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".gallery-slider__swiper--construction", {
+  const swiperConstruction = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".gallery-slider__swiper--construction", {
     direction: "horizontal",
     loop: true,
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectCoverflow],
     navigation: {
-      nextEl: ".gallery-slider__btn-next",
-      prevEl: ".gallery-slider__btn-prev"
+      nextEl: ".gallery-slider__btn-next--construction",
+      prevEl: ".gallery-slider__btn-prev--construction"
+    },
+    effect: "coverflow",
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: -20,
+    watchOverflow: true,
+    initialSlide: 2,
+    coverflowEffect: {
+      depth: 300,
+      rotate: 20,
+      scale: 0.8,
+      slideShadows: true
+    }
+  });
+
+  // eslint-disable-next-line no-unused-vars
+  const swiperConcept = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".gallery-slider__swiper--concept", {
+    direction: "horizontal",
+    loop: true,
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectCoverflow],
+    navigation: {
+      nextEl: ".gallery-slider__btn-next--concept",
+      prevEl: ".gallery-slider__btn-prev--concept"
     },
     effect: "coverflow",
     centeredSlides: true,
