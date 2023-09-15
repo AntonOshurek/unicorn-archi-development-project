@@ -1,0 +1,11 @@
+.about-us-slider {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	& > img {
+		height: 500px;
+		width: 400px;
+		object-fit: cover;
+	}
+}

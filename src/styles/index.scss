@@ -10,13 +10,15 @@
 @import './components/gallery/gallery';
 @import './components/location';
 @import './components/your-house';
-@import './components/about-us';
+@import './components/about-us/about-us';
 @import './components/contact';
 @import './common/typography';
 @import './components/gallery/gallery-slider';
 @import './components/inside/inside-slider';
 @import './common/slider';
 @import './libs/baguettebox';
+@import './components/about-us/our-projects.scss';
+@import './components/about-us/about-us-slider.scss';
 
 /* libs */
 @import './libs/swiper';
