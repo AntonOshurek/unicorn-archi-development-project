@@ -44,6 +44,12 @@
 	text-transform: uppercase;
 }
 
+.typography-big-text {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-big-text-weight);
+	font-size: var(--typography-big-text-size);
+}
+
 .typography-general-text {
 	font-family: var(--basci-font);
 	font-weight: var(--typography-general-text-weight);

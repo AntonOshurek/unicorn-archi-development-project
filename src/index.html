@@ -55,62 +55,80 @@
 			<!-- Slider main container -->
 			<div class="swiper about-slider__swiper">
 				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
+				<ul class="swiper-wrapper about-slider__wrapper">
 					<!-- Slides -->
-					<div class="swiper-slide about-slider__slide">
-						<img
-							alt=""
-							src="./images/about.jpg"
-							width="500"
-							height="400"
-						>
-					</div>
+					<li class="swiper-slide about-slider__slide">
+						<a href="./images/about.jpg" >
+							<img
+								class="about-slider__image"
+								alt=""
+								src="./images/about.jpg"
+								width="500"
+								height="400"
+							>
+						</a>
+					</li>
 
-					<div class="swiper-slide about-slider__slide">
-						<img
-							alt=""
-							src="./images/banner.jpg"
-							width="500"
-							height="400"
-						>
-					</div>
+					<li class="swiper-slide about-slider__slide">
+						<a href="./images/banner.jpg" >
+							<img
+							class="about-slider__image"
+								alt=""
+								src="./images/banner.jpg"
+								width="500"
+								height="400"
+							>
+						</a>
+					</li>
 
-					<div class="swiper-slide about-slider__slide">
-						<img
-							alt=""
-							src="./images/parallax-2.jpg"
-							width="500"
-							height="400"
-						>
-					</div>
+					<li class="swiper-slide about-slider__slide">
+						<a href="./images/parallax-2.jpg" >
+							<img
+							class="about-slider__image"
+								alt=""
+								src="./images/parallax-2.jpg"
+								width="500"
+								height="400"
+							>
+						</a>
+					</li>
 
-					<div class="swiper-slide about-slider__slide">
-						<img
-							alt=""
-							src="./images/W1.jpg"
-							width="600"
-							height="400"
-						>
-					</div>
+					<li class="swiper-slide about-slider__slide">
+						<a href="./images/W1.jpg" >
+							<img
+								class="about-slider__image"
+								alt=""
+								src="./images/W1.jpg"
+								width="600"
+								height="400"
+							>
+						</a>
+					</li>
 
-					<div class="swiper-slide about-slider__slide">
-						<img
-							alt=""
-							src="./images/your-house.jpg"
-							width="600"
-							height="400"
-						>
-					</div>
+					<li class="swiper-slide about-slider__slide">
+						<a href="./images/your-house.jpg" >
+							<img
+								class="about-slider__image"
+								alt=""
+								src="./images/your-house.jpg"
+								width="600"
+								height="400"
+							>
+						</a>
+					</li>
 
-					<div class="swiper-slide about-slider__slide">
-						<img
-							alt=""
-							src="./images/W2.jpg"
-							width="600"
-							height="400"
-						>
-					</div>
-				</div>
+					<li class="swiper-slide about-slider__slide">
+						<a href="./images/W2.jpg" >
+							<img
+								class="about-slider__image"
+								alt=""
+								src="./images/W2.jpg"
+								width="600"
+								height="400"
+							>
+						</a>
+					</li>
+				</ul>
 				<!-- If we need pagination -->
 				<div class="swiper-pagination"></div>
 			</div>
@@ -194,9 +212,9 @@
 				<!-- Slider main container -->
 			<div class="swiper inside-slider__swiper">
 				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
+				<ul class="swiper-wrapper inside-slider__wrapper">
 					<!-- Slides -->
-					<div class="swiper-slide">
+					<li class="swiper-slide inside-slider__slide">
 						<article class="house-inside">
 							<div class="house-inside__three-dimensional">
 								<h3 class="inside__3d-title typography-medium-title">Budynek A</h3>
@@ -230,8 +248,8 @@
 								</figure>
 							</div>
 						</article>
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide inside-slider__slide">
 						<article class="house-inside">
 							<div class="house-inside__three-dimensional">
 								<h3 class="inside__3d-title typography-medium-title">Budynek B</h3>
@@ -265,8 +283,8 @@
 								</figure>
 							</div>
 						</article>
-					</div>
-				</div>
+					</li>
+				</ul>
 
 
 				<div class="inside-slider__controls">
@@ -418,9 +436,7 @@
 				Luksus i udogodnienia tuż przed twoim progiem
 			</span>
 		</h2>
-
 		<img class="location__image" width="500" height="500" src="./images/location.png" alt="">
-
 	</section>
 
 	<section class="your-house container">
@@ -428,38 +444,84 @@
 			<span>To może być</span>
 			<span>Twój dom</span>
 		</h2>
-
-		<!-- <a class="your-house__link" href="#">Wybierz dom</a> -->
-
 		<img class="your-house__image" src="./images/your-house.jpg" width="600" height="400" alt="trzy budinki stojące razem">
 	</section>
 
 	<section class="about-us container">
-		<h2 class="about-us__title section-title">
-			Poznaj nas
-		</h2>
+		<div class="about-us__wrap">
+			<h2 class="about-us__title typography-x-smal-title typography-section-title">o nas</h2>
+			<p class="about-us__slogan typography-big-title">
+				Poznaj naszą firmę
+			</p>
 
-		<a class="about-us__link" href="http://www.unicornarchitecture.com.pl/index.html">
-			<span class="visually-hidden">strona firmy Unicorn Architecture</span>
-			<img class="about-us__logo" src="./images/logo_UNICORN_ARCHITECTURE.svg" width="200" height="100" alt="niebieskie logo Unicorn architecture">
-		</a>
+			<a class="about-us__logo-link" href="http://www.unicornarchitecture.com.pl/index.html">
+				<span class="visually-hidden">strona firmy Unicorn Architecture</span>
+				<img class="about-us__logo" src="./images/logo_UNICORN_ARCHITECTURE.svg" width="200" height="100" alt="niebieskie logo Unicorn architecture">
+			</a>
 
-		<p class="about-us__info">
-			Pracownia Unicorn Architecture powstała w listopadzie 2020 roku, jednakże zespół architektoniczny będący zalążkiem biura
-			działa wspólnie od 2014 roku.
+			<p class="about-us__info typography-general-text">
+				Pracownia Unicorn Architecture powstała w listopadzie 2020 roku, jednakże zespół architektoniczny będący zalążkiem biura
+				działa wspólnie od 2014 roku.
 
-			Zajmujemy się architekturą, urbanistyką i projektami wnętrz. Projektujemy zespoły zabudowy mieszkaniowej wielorodzinnej
-			oraz jednorodzinnej, budynki usługowe, budynki biurowe oraz budynki przemysłowe.
-		</p>
+				Zajmujemy się architekturą, urbanistyką i projektami wnętrz. Projektujemy zespoły zabudowy mieszkaniowej wielorodzinnej
+				oraz jednorodzinnej, budynki usługowe, budynki biurowe oraz budynki przemysłowe.
+			</p>
 
-		<p class="about-us__info">
-			Pracownię prowadzi Jakub Pawlak, architekt, absolwent Wydziału Architektury i Urbanistyki Politechniki Poznańskiej,
-			który swoje doświadczenie zbierał w poznańskim biurze architektonicznym Litoborski+Marciniak a następnie w Warszawie w
-			JSK Architekci.
+			<p class="about-us__info typography-general-text">
+				Pracownię prowadzi Jakub Pawlak, architekt, absolwent Wydziału Architektury i Urbanistyki Politechniki Poznańskiej,
+				który swoje doświadczenie zbierał w poznańskim biurze architektonicznym Litoborski+Marciniak a następnie w Warszawie w
+				JSK Architekci.
 
-			Należymy do grupy firm Unicorn, których początek sięga 1995 roku. Obszarem działalności grupy są architektura,
-			budownictwo oraz informatyka.
-		</p>
+				Należymy do grupy firm Unicorn, których początek sięga 1995 roku. Obszarem działalności grupy są architektura,
+				budownictwo oraz informatyka.
+			</p>
+
+			<a class="about-us__full-link typography-big-text" href="http://www.unicornarchitecture.com.pl/index.html">www.unicornarchitecture.com.pl</a>
+
+			<article class="our-projects">
+				<h3 class="our-projects__title typography-smal-title">Zobacz inne nasze realizacje: </h3>
+
+				<ul class="our-projects__list">
+					<li class="our-projects__item">
+						<a class="our-projects__link typography-big-text" href="">realizacja</a>
+					</li>
+					<li class="our-projects__item">
+						<a class="our-projects__link typography-big-text" href="">realizacja</a>
+					</li>
+					<li class="our-projects__item">
+						<a class="our-projects__link typography-big-text" href="">realizacja</a>
+					</li>
+					<li class="our-projects__item">
+						<a class="our-projects__link typography-big-text" href="">realizacja</a>
+					</li>
+				</ul>
+			</article>
+		</div>
+
+		<div class="about-us-slider">
+			<!-- Slider main container -->
+			<div class="swiper about-us-slider__swiper">
+				<!-- Additional required wrapper -->
+				<ul class="swiper-wrapper about-us-slider__wrapper">
+					<!-- Slides -->
+					<li class="swiper-slide about-us-slider__slide">
+						<img class="about-us-slider__image" src="./images/our-projects/budynek-modulowy_1.jpg" alt="">
+					</li>
+					<li class="swiper-slide about-us-slider__slide">
+						<img class="about-us-slider__image" src="./images/our-projects/osiedle-naklo_4.jpg" alt="">
+					</li>
+					<li class="swiper-slide about-us-slider__slide">
+						<img class="about-us-slider__image" src="./images/our-projects/zabudowa-mieszkaniowa_1.jpg" alt="">
+					</li>
+					<li class="swiper-slide about-us-slider__slide">
+						<img class="about-us-slider__image" src="./images/our-projects/zespol-budynkow-mieszkalnych-warszawa_1.jpg" alt="">
+					</li>
+				</ul>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
 	</section>
 
 	<section class="contact container">
