@@ -1,10 +1,20 @@
+@import '../variables/variables.scss';
+
 .footer {
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
 	background-color: var(--bg);
 }
 
 .footer__wrap {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	gap: 20px;
+	align-items: center;
 
+	@media (max-width: $tablet-width) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
 }
 
 .footer__firm-link {
@@ -13,6 +23,53 @@
 
 .footer__firm-logo {
 	object-fit: cover;
-		/* for align logo in left border of section */
-		transform: translateX(-18px);
+	/* for align logo in left border of section */
+	transform: translateX(-18px);
+
+	@media (max-width: $tablet-width) {
+		transform: translateX(0);
+	}
+}
+
+.footer__address {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	height: 100%;
+
+	@media (max-width: $tablet-width) {
+		flex-direction: column;
+		justify-content: center;
+
+		& > div {
+			align-items: center;
+		}
+	}
+}
+
+.footer__address-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: flex-start;
+	font-style: normal;
+}
+
+.footer__address-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.footer__link {
+	color: var(--main-color);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
