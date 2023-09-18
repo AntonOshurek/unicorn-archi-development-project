@@ -1,14 +1,17 @@
 @import '../../variables/variables';
 
 .inside {
-	display: flex;
-	flex-direction: column;
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
 	background-color: var(--grey-bg);
+}
+
+.inside__wrap {
+	display: flex;
+	flex-direction: column;
 	gap: 50px;
 }
 
-.inside__titles-wrap {
+.inside__titles {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, min-content);

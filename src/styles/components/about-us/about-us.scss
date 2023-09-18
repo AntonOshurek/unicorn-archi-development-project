@@ -3,7 +3,9 @@
 .about-us {
 	background-color: var(--bg);
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+}
 
+.about-us__wrap {
 	display: grid;
 	grid-template-columns: 1fr max-content;
 	grid-gap: 20px;
@@ -13,7 +15,7 @@
 	}
 }
 
-.about-us__wrap {
+.about-us__info-block {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

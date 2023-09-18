@@ -1,0 +1,18 @@
+.footer {
+	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+	background-color: var(--bg);
+}
+
+.footer__wrap {
+
+}
+
+.footer__firm-link {
+
+}
+
+.footer__firm-logo {
+	object-fit: cover;
+		/* for align logo in left border of section */
+		transform: translateX(-18px);
+}
