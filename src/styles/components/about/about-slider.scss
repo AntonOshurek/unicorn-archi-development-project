@@ -21,10 +21,20 @@
 
 .about-slider__slide {
 	max-width: 500px;
+	position: relative;
 
 	@media (max-width: $mobile-width) {
 		max-width: 300px;
 	}
+}
+
+.about-slider__slide-link {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .about-slider__image {
