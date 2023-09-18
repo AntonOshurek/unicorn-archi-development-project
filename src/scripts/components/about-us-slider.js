@@ -20,8 +20,8 @@ const aboutUsSlider = () => {
 		},
 
 		navigation: {
-			nextEl: ".about-slider__btn-next",
-			prevEl: ".about-slider__btn-prev",
+			nextEl: ".about-us-slider__btn-next",
+			prevEl: ".about-us-slider__btn-prev",
 		},
 	});
 }

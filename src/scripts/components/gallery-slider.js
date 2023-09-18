@@ -10,8 +10,8 @@ const gallerySlider = () => {
 		modules: [Navigation, EffectCoverflow],
 
 		navigation: {
-			nextEl: ".gallery-slider__btn--next-construction",
-			prevEl: ".gallery-slider__btn--prev-construction",
+			nextEl: ".gallery-slider__btn-next-construction",
+			prevEl: ".gallery-slider__btn-prev-construction",
 		},
 
 		effect: "coverflow",
@@ -36,8 +36,8 @@ const gallerySlider = () => {
 			modules: [Navigation, EffectCoverflow],
 
 			navigation: {
-				nextEl: ".gallery-slider__btn--next-concept",
-				prevEl: ".gallery-slider__btn--prev-concept",
+				nextEl: ".gallery-slider__btn-next-concept",
+				prevEl: ".gallery-slider__btn-prev-concept",
 			},
 
 			effect: "coverflow",

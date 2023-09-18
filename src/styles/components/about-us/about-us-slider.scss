@@ -29,3 +29,23 @@
 	height: 100%;
 	object-fit: cover;
 }
+
+.about-us-slider__controls{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	width: 100%;
+	height: min-content;
+	max-width: 500px;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+
+	@media (max-width: $mobile-width) {
+		max-width: 300px;
+	}
+}

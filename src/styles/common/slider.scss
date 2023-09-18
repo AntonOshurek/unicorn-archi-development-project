@@ -8,6 +8,8 @@
 	cursor: pointer;
 	pointer-events: all;
 
+	background-color: transparent;
+
 	&::after {
 		display: none;
 	}
