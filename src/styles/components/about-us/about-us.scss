@@ -1,25 +1,27 @@
 @import '../../variables/variables';
 
 .about-us {
-	background-color: var(--bg);
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
+	background-color: var(--bg);
+}
 
+.about-us__wrap {
 	display: grid;
-	grid-template-columns: 1fr max-content;
 	grid-gap: 20px;
+	grid-template-columns: 1fr max-content;
 
 	@media (max-width: $tablet-width) {
 		grid-template-columns: 1fr;
 	}
 }
 
-.about-us__wrap {
+.about-us__info-block {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: flex-start;
-	gap: 20px;
+	justify-content: flex-start;
 	background-color: var(--bg);
+	gap: 20px;
 }
 
 .about-us__title {
@@ -46,6 +48,6 @@
 }
 
 .about-us__full-link {
-	color: var(--main-color);
 	text-decoration: none;
+	color: var(--main-color);
 }

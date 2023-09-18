@@ -24,11 +24,21 @@
 }
 
 .gallery-slider__slide {
+	position: relative;
 	max-width: 500px;
 
 	@media (max-width: $mobile-width) {
 		max-width: 300px;
 	}
+}
+
+.gallery-slider__full-screen-link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
 }
 
 .gallery-slider__slide-image {
@@ -56,10 +66,4 @@
 	@media (max-width: $mobile-width) {
 		max-width: 300px;
 	}
-}
-
-.gallery-slider__btn {
-	z-index: 1;
-	background-color: transparent;
-	pointer-events: all;
 }

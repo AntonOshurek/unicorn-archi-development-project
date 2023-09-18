@@ -1,14 +1,17 @@
 @import '../../variables/variables';
 
 .gallery {
-	display: grid;
-	grid-row-gap: 40px;
-	grid-template-columns: 1fr;
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
 	background-color: var(--bg);
 }
 
-.gallery__titles-wrap {
+.gallery__wrap {
+	display: grid;
+	grid-row-gap: 40px;
+	grid-template-columns: 1fr;
+}
+
+.gallery__titles {
 	display: grid;
 	grid-gap: var(--section-titles-block-margin);
 	grid-template-columns: 1fr;

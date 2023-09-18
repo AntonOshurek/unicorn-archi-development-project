@@ -1,6 +1,5 @@
 @import './global/global-styles';
 @import './variables/variables';
-@import './global/global-components';
 @import './components/banner';
 @import './components/about/about';
 @import './components/about/about-slider';
@@ -11,14 +10,14 @@
 @import './components/location';
 @import './components/your-house';
 @import './components/about-us/about-us';
-@import './components/contact';
+@import './components/footer';
 @import './common/typography';
 @import './components/gallery/gallery-slider';
 @import './components/inside/inside-slider';
 @import './common/slider';
 @import './libs/baguettebox';
-@import './components/about-us/our-projects.scss';
-@import './components/about-us/about-us-slider.scss';
+@import './components/about-us/our-projects';
+@import './components/about-us/about-us-slider';
 
 /* libs */
 @import './libs/swiper';

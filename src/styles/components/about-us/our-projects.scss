@@ -11,22 +11,22 @@
 }
 
 .our-projects__list {
-	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: flex-start;
+	list-style: none;
 	gap: 20px;
 }
 
 .our-projects__item {
 	position: relative;
 
-	&:not(:first-child):after {
+	&:not(:first-child)::after {
 		content: '';
 		position: absolute;
-		top: 0;
 		left: -10px;
+		top: 0;
 		width: 1px;
 		height: 100%;
 		background-color: var(--main-text-color);
@@ -34,6 +34,6 @@
 }
 
 .our-projects__link {
-	color: var(--main-color);
 	text-decoration: none;
+	color: var(--main-color);
 }
