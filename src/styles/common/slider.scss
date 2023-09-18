@@ -5,10 +5,9 @@
 	justify-content: center;
 	border: none;
 	padding: 5px;
+	background-color: transparent;
 	cursor: pointer;
 	pointer-events: all;
-
-	background-color: transparent;
 
 	&::after {
 		display: none;

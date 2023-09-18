@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/variables';
 
 .footer {
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
@@ -7,22 +7,23 @@
 
 .footer__wrap {
 	display: grid;
+	align-items: center;
 	grid-template-columns: min-content 1fr;
 	gap: 20px;
-	align-items: center;
 
 	@media (max-width: $tablet-width) {
-		grid-template-columns: 1fr;
 		justify-items: center;
+		grid-template-columns: 1fr;
 	}
 }
 
-.footer__firm-link {
+// .footer__firm-link {
 
-}
+// }
 
 .footer__firm-logo {
 	object-fit: cover;
+
 	/* for align logo in left border of section */
 	transform: translateX(-18px);
 
@@ -33,10 +34,10 @@
 
 .footer__address {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
+	justify-content: space-between;
 	height: 100%;
+	gap: 20px;
 
 	@media (max-width: $tablet-width) {
 		flex-direction: column;
@@ -51,10 +52,10 @@
 .footer__address-info {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	gap: 20px;
 	align-items: flex-start;
+	justify-content: space-between;
 	font-style: normal;
+	gap: 20px;
 }
 
 .footer__address-links {
@@ -66,8 +67,8 @@
 }
 
 .footer__link {
-	color: var(--main-color);
 	text-decoration: none;
+	color: var(--main-color);
 
 	&:hover {
 		text-decoration: underline;
@@ -75,10 +76,10 @@
 }
 
 .footer__right {
-	padding: 40px 0;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0;
 	gap: 10px;
 
 	@media (max-width: $tablet-width) {
@@ -87,8 +88,8 @@
 }
 
 .footer__rights-info {
-	font-size: 12px;
 	font-weight: 400;
+	font-size: 12px;
 	text-align: left;
 
 	@media (max-width: $tablet-width) {
@@ -102,10 +103,10 @@
 }
 
 .footer__rights-additional {
-	font-size: 12px;
 	font-weight: 400;
-	color: #a0a0a0;
+	font-size: 12px;
 	text-align: right;
+	color: #A0A0A0;
 
 	@media (max-width: $tablet-width) {
 		text-align: center;
