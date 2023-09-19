@@ -32,7 +32,7 @@
 .about__title {
 	grid-area: title;
 	padding-bottom: var(--section-titles-block-margin);
-	color: var(--main-text-color);
+	color: var(--text-primary);
 
 	@media (max-width: $tablet-width) {
 		padding-bottom: 0;
@@ -41,7 +41,7 @@
 
 .about__slogan {
 	grid-area: slogan;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 }
 
 .about__header-block {
@@ -54,7 +54,7 @@
 
 .about__subslogan {
 	grid-area: subslogan;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 
 	@media (max-width: $tablet-width) {
 			display: none;
@@ -67,6 +67,6 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	grid-area: info;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 	gap: 15px;
 }
