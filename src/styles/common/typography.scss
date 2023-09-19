@@ -50,8 +50,16 @@
 	font-size: var(--typography-big-text-size);
 }
 
-.typography-general-text {
+.typography-primary-text {
 	font-family: var(--basci-font);
-	font-weight: var(--typography-general-text-weight);
-	font-size: var(--typography-general-text-size);
+	font-weight: var(--typography-primary-text-weight);
+	font-size: var(--typography-primary-text-size);
+	color: var(--text-primary);
+}
+
+.typography-secondary-text {
+	font-family: var(--basci-font);
+	font-weight: var(--typography-secondary-text-weight);
+	font-size: var(--typography-secondary-text-size);
+	color: var(--text-secondary);
 }

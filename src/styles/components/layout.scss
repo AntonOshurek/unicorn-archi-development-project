@@ -35,19 +35,19 @@
 
 .layout__title {
 	grid-area: title;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 }
 
 .layout__slogan {
 	align-self: start;
 	grid-area: slogan;
 	text-align: start;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 }
 
 .layout__info {
 	grid-area: info;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 }
 
 .layout__list {
@@ -133,7 +133,7 @@
 	font-family: var(--basci-font);
 	font-weight: 500;
 	font-size: 30px;
-	color: var(--main-text-color);
+	color: var(--text-primary);
 
 	& > span {
 		display: flex;
