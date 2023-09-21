@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 .location {
 	background-color: var(--bg);
 	padding: var(--standart-section-top-padding) var(--standart-side-padding);
@@ -29,6 +31,10 @@
 		margin-top: -40px;
 
 		box-shadow: inset 36px 27px 74px 50px rgba(247, 247, 247, 1);
+
+		@media (max-width: $mobile-width) {
+			box-shadow: inset 36px 27px 90px 100px rgba(247, 247, 247, 1);
+		}
 	}
 }
 
@@ -77,6 +83,16 @@
 
 		& .location__infrastructure-item {
 			grid-row: 1/1;
+		}
+	}
+
+	@media (max-width: $mobile-width) {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		&--first {
+			padding-top: 200px;
 		}
 	}
 }
