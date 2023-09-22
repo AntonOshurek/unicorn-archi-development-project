@@ -1,41 +1,32 @@
-const showGalleryBlockAnimation = () => {
+const showBlockAnimation = () => {
 
-	let options = {
+	const blocksForShowingAnimation = document.querySelectorAll('.showing-animation-js');
+
+	blocksForShowingAnimation.forEach((item) => {
+		item.classList.add('hidden-for-showing');
+	});
+
+	const options = {
 		threshold: 0.5
 	};
 
-	const showImage = () => {
-		const galleryImages = document.querySelectorAll('.gallery__image');
-
-		galleryImages.forEach((image, index) => {
-			setTimeout(() => {
-				image.classList.add('gallery__image--show');
-			}, index * 300); // Задержка для каждого элемента в 100 миллисекунд
-		});
+	const showBlock = (currentBlock) => {
+		currentBlock.classList.remove('hidden-for-showing');
+		currentBlock.classList.add('show');
 	};
 
-	const hiddeImage = () => {
-		const galleryImages = document.querySelectorAll('.gallery__image');
-
-		galleryImages.forEach((image) => {
-			image.classList.remove('gallery__image--show');
-		});
-	};
-
-	// Создаем экземпляр Intersection Observer
-	const galleryObserver = new IntersectionObserver((entries, observer) => {
+	const observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-				showImage();
+				const currentBlock = entry.target;
+				showBlock(currentBlock);
 			}
 		});
 	}, options);
 
-	// Получаем все блоки с классом .image
-	const gallery = document.querySelector('.gallery');
-
-	// Наблюдаем за каждым блоком
-	galleryObserver.observe(gallery);
+	blocksForShowingAnimation.forEach((block) => {
+		observer.observe(block);
+	})
 };
 
-export default showGalleryBlockAnimation;
+export default showBlockAnimation;

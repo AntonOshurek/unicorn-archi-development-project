@@ -1,4 +1,4 @@
-import showGalleryBlockAnimation from './components/showGalleryBlockAnimation.js';
+import showBlockAnimation from './components/showGalleryBlockAnimation.js';
 import aboutSlider from './components/about-slider.js';
 import insideSlider from './components/inside-slider.js';
 import gallerySlider from './components/gallery-slider.js';
@@ -8,7 +8,7 @@ import aboutUsSlider from './components/about-us-slider.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 	aboutSlider();
-	showGalleryBlockAnimation();
+	showBlockAnimation();
 	insideSlider();
 	gallerySlider();
 	galleryFullscreen();
